@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body /*cambaiar*/
+{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1500px;                    /*nueva*/
+}
+.title--card{
+    font-size: 3rem;
+}
+.description--card{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.container{
+    display: flex;                      
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;                       /*cambaiar*/
+}
+.card{
+    margin: 2rem 0;
+    transform-style: preserve-3d;       /*nueva*/
+    width: 80%;
+    border-radius: 30px;                /*cambaiar*/
+    padding: 3rem 4rem;
+    /*lef and right - top and bottom - no sé - color- se agrega una "," si se agregará otra sombra */
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2),  0 0 50px rgba(0,0,0,0.2); /*cambaiar*/
+}
+.sneaker{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentImage{
+    width: 15rem;                          /*cambaiar*/
+}
+.sneaker .contentImage img{
+    transition: transform .75s ease-out;
+    width: 100%;                        /*cambaiar*/
+    min-height: 15rem;                   /*cambaiar*/
+    position: relative;
+    z-index: 5;
+}
+.circle{
+    width: 18rem;
+    height: 18rem;
+    background: linear-gradient(
+        to right, 
+        rgb(0 194 242 / 60%), 
+        rgb(71 11 254 / 68%)
+    );
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+.info h1{
+    transition: transform .75s ease-out;
+    margin-top: 3rem;
+}
+.info h3{
+    transition: transform .75s ease-out;
+    padding: 1rem 0;
+}
+.model{
+    transition: transform .75s ease-out;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.model button{
+    padding: .5rem .8rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #585858;
+}
+button.active{
+    background: #585858;
+    color: white;
+}
+button.cart{
+    transition: transform .75s ease-out;
+    margin: 1.5rem 0;
+    width: 100%;
+    padding: .8rem 0;
+    border-radius: 30px;
+    background: rgb(82 25 255);
+    font-weight: bold;
+    border:none;
+    color: white;
+    cursor: pointer;
+}
